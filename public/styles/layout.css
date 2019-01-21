@@ -4,7 +4,7 @@
  * Do not modify these two selectors, please
  */
 html {
-  box-sizing: border-box;
+  font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -15,12 +15,18 @@ html {
  */
 
 body {
+  box-sizing: border-box;
+  position: relative;
   margin: 0;
   color: #244751;
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+main.container{
+  width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 8rem;
+  height: 90rem;
+} 

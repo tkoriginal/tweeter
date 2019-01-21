@@ -1,0 +1,25 @@
+#nav-bar{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 8rem;
+  width: 100vw;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding: 0 3.2rem;
+}
+
+#nav-bar .nav-bar__logo{
+  display: flex;
+}
+
+#nav-bar .logo{
+  height: 8rem;
+  width: 8rem;
+  margin-right: 1rem;
+}
+
+#nav-bar .header{
+  font-size: 3.2rem;
+  align-self: center;
+}
