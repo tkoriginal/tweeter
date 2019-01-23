@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i"
       rel="stylesheet"
     />
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
   </head>
-
+  
   <body>
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
@@ -23,19 +24,38 @@
         <span class="header">Tweeter</span>
       </div>
     </nav>
-
+    
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
-          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <textarea class="textarea" name="text" placeholder="What are you humming about?"></textarea>
           <div class="new-tweet__submit">
             <input type="submit" value="Tweet" /> 
             <span class="counter">140</span>
           </div>
         </form>
       </section>
+      <section class="tweet-container">
+        <article class="tweet">
+          <header class="tweet__header">
+            <img class="tweet__image" src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png" alt="user-image">
+            <h2 class="tweet__name">Bill Fields</h2>
+          </header>
+          <p class="tweet__text">Little tweet here</p>
+          <footer class="tweet__footer">
+            <p class="tweet__posted">10 days ago</p>
+            <div class="tweet__icon">
+              <i class="fas fa-flag tweet__flag"></i>
+              <i class="fas fa-retweet tweet__retweet"></i>
+              <i class="fas fa-heart tweet__retweet"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
     </main>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
   </body>
 </html>

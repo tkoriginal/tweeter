@@ -33,3 +33,6 @@ section.new-tweet textarea{
   font-size: 1.5rem;
 }
 
+.limit-reached{
+  color:red;
+}
