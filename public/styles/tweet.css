@@ -5,7 +5,7 @@ article.tweet{
   margin: 3.2rem;
   border: 1px solid #ccc;
   opacity: .5;
-  transition: .3s ease-in;
+  transition: .2s ease-in;
 }
 
 header.tweet__header{
@@ -27,6 +27,14 @@ header .tweet__name{
   margin: 0;
   font-size: 2rem;
   align-self: flex-start
+}
+
+header .tweet__handle{
+  flex-grow: 1;
+  text-align: right;
+  align-self: center;
+  font-size: 1.6rem;
+  margin-right: 1rem;
 }
 
 article .tweet__text{
@@ -52,7 +60,7 @@ div.tweet__icon i{
 
 article.tweet .tweet__icon{
   opacity: 0;
-  transition: .4s ease-in;
+  transition: .2s ease-in;
 }
 
 article.tweet:hover{
