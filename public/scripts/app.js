@@ -69,7 +69,7 @@ const createTweetElement = (tweetObj) => {
     </header>
     <p class="tweet__text">${tweetObj.content.text}</p>
     <footer class="tweet__footer">
-      <p class="tweet__posted">${Date(tweetObj.created_at)}</p>
+      <p class="tweet__posted">${moment(tweetObj.created_at).fromNow()}</p>
       <div class="tweet__icon">
         <i class="fas fa-flag tweet__flag"></i>
         <i class="fas fa-retweet tweet__retweet"></i>
@@ -88,17 +88,36 @@ const loadTweets = () => {
   })
 }
 
+const isInvalidMessage = (text) => {
+  if(text === null || text === ''){
+    return 'There is nothing to tweet'
+  }
+  if (text.length > 140) {
+    return 'The tweet is too long'
+  }
+  return false;
+
+}
+
 const newTweet = () => {
   $('form').on('submit', function (e) {
-    const form = $(this)
+    e.preventDefault();
+    const form = $(this);
     const data = form.serialize();
-    const text = e.preventDefault();
-    $.post('/tweets',
-      data, 
-      (data) => {alert('success')});
+    const textArea = form[0][0]
+    if (isInvalidMessage(textArea.value)){
+      alert(isInvalidMessage(textArea.value));
+    } else {
+      $.post('/tweets',
+        data, 
+        (data) => {
+          loadTweets();
+          $(textArea).val('');
+        });
+      }
     })
 }
 $(document).ready(function() {
-    newTweet();
-    loadTweets();
+  loadTweets();
+  newTweet();
 })
