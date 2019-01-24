@@ -1,4 +1,4 @@
-#nav-bar{
+nav#nav-bar{
   position: fixed;
   top:0;
   left: 0;
@@ -8,6 +8,8 @@
   color: #e8fdff;
   padding: 0 3.2rem;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
 }
 
 #nav-bar .nav-bar__logo{
@@ -23,4 +25,22 @@
 #nav-bar .header{
   font-size: 3.2rem;
   align-self: center;
+}
+
+#nav-bar .nav-bar__compose{
+  margin: 1rem 5rem 1rem 0;
+  font-size: 2rem;
+  padding: .7rem 1.7rem;
+  border: 1px solid #444;
+  border-radius: .8rem;
+  color: #00a087;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  outline: none;
+}
+
+#nav-bar .nav-bar__compose:hover{
+  color: #fff;
+  background-color: #00574a;
+  outline: none;
 }

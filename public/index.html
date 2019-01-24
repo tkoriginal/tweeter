@@ -21,9 +21,13 @@
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <div class="nav-bar__logo">
-        <img class="logo" src="/images/bird.png" width="80px" height="80px" />
+        <img class="logo" src="/images/bird.png" width="80px" height="80px"/>
         <span class="header">Tweeter</span>
       </div>
+      <button class="nav-bar__compose">
+        <i class="fas fa-edit"></i>
+        Compose
+      </button>
     </nav>
     
     <!-- Page-specific (main) content here -->
@@ -32,6 +36,7 @@
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
           <textarea class="textarea" name="text" placeholder="What are you humming about?"></textarea>
+          <p class="new-error"></p>
           <div class="new-tweet__submit">
             <input type="submit" value="Tweet"/> 
             <span class="counter">140</span>

@@ -4,7 +4,7 @@ article.tweet{
   border-radius: .8rem;
   margin: 3.2rem;
   border: 1px solid #ccc;
-  opacity: .5;
+  opacity: .8;
   transition: .2s ease-in;
 }
 
@@ -41,6 +41,7 @@ article .tweet__text{
   height: 4rem;
   padding: 1.8rem;
   font-size: 1.8rem;
+  word-wrap: break-word;
 }
 
 footer.tweet__footer{
@@ -73,3 +74,5 @@ article.tweet:hover .tweet__icon{
 div.tweet__icon i:hover{
   color: #00a087;
 }
+
+
