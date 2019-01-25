@@ -1,0 +1,17 @@
+.tweet-end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  opacity: .3;
+  border-top: 1px solid #ddd;
+
+  &__image{
+    width: 60px;
+    height: 60px;
+  }
+
+  &__text{
+    font-size: 1.7rem;
+  }
+}

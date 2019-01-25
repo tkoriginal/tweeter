@@ -1,22 +1,39 @@
 #nav-bar {
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 8rem;
+    width: 100vw;
+    background-color: #00a087;
+    color: #e8fdff;
+    padding: 0 3.2rem;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+  
   & .logo{
     height: 8rem;
     width: 8rem;
     margin-right: 1rem;
   }
-  
+
   & .header{
     font-size: 3.2rem;
     align-self: center;
+    display: none;
   }
-
+  @media only screen and (min-width: 600px) {
+  & .header{
+      display: block;
+    }  
+  }
   & .nav-bar{
     &__logo{
       display: flex;
     }
 
     &__compose{
-      margin: 1rem 5rem 1rem 0;
+      margin: 1rem 0rem;
       font-size: 2rem;
       padding: .7rem 1.7rem;
       border: 1px solid #444;
@@ -34,6 +51,3 @@
     }
   }
 }
-
-
-

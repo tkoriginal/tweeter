@@ -3,5 +3,10 @@
 }
 
 html {
+  font-size: 50%;
+}
+
+@media only screen and (min-width: 600px) {
   font-size: 62.5%;
 }
+

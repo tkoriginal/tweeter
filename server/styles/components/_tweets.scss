@@ -68,9 +68,13 @@
       opacity: 1;
     }
   }
-  
+
   &__icon i:hover{
   color: #00a087;
+  }
+
+  &:last-of-type{
+    margin-bottom: 7rem;
   }
 }
 

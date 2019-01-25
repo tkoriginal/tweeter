@@ -2,6 +2,9 @@
   box-sizing: inherit; }
 
 html {
+  font-size: 50%; }
+
+@media only screen and (min-width: 600px) {
   font-size: 62.5%; }
 
 .limit-reached {
@@ -11,6 +14,19 @@ html {
   color: red;
   font-size: 1.2rem;
   font-weight: 700; }
+
+.tweet-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  opacity: .3;
+  border-top: 1px solid #ddd; }
+  .tweet-end__image {
+    width: 60px;
+    height: 60px; }
+  .tweet-end__text {
+    font-size: 1.7rem; }
 
 body {
   box-sizing: border-box;
@@ -26,7 +42,7 @@ main.container {
   background-color: #fff;
   padding-top: 8rem; }
 
-nav#nav-bar {
+#nav-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -38,33 +54,33 @@ nav#nav-bar {
   z-index: 10;
   display: flex;
   justify-content: space-between; }
-
-#nav-bar .logo {
-  height: 8rem;
-  width: 8rem;
-  margin-right: 1rem; }
-
-#nav-bar .header {
-  font-size: 3.2rem;
-  align-self: center; }
-
-#nav-bar .nav-bar__logo {
-  display: flex; }
-
-#nav-bar .nav-bar__compose {
-  margin: 1rem 5rem 1rem 0;
-  font-size: 2rem;
-  padding: .7rem 1.7rem;
-  border: 1px solid #444;
-  border-radius: .8rem;
-  color: #00a087;
-  cursor: pointer;
-  transition: .2s ease-in-out;
-  outline: none; }
-  #nav-bar .nav-bar__compose:hover {
-    color: #fff;
-    background-color: #00574a;
+  #nav-bar .logo {
+    height: 8rem;
+    width: 8rem;
+    margin-right: 1rem; }
+  #nav-bar .header {
+    font-size: 3.2rem;
+    align-self: center;
+    display: none; }
+  @media only screen and (min-width: 600px) {
+    #nav-bar .header {
+      display: block; } }
+  #nav-bar .nav-bar__logo {
+    display: flex; }
+  #nav-bar .nav-bar__compose {
+    margin: 1rem 0rem;
+    font-size: 2rem;
+    padding: .7rem 1.7rem;
+    border: 1px solid #444;
+    border-radius: .8rem;
+    color: #00a087;
+    cursor: pointer;
+    transition: .2s ease-in-out;
     outline: none; }
+    #nav-bar .nav-bar__compose:hover {
+      color: #fff;
+      background-color: #00574a;
+      outline: none; }
 
 section.new-tweet {
   margin: 5rem 3.2rem 3rem 3.2rem;
@@ -147,3 +163,5 @@ section.new-tweet {
       opacity: 1; }
   .tweet__icon i:hover {
     color: #00a087; }
+  .tweet:last-of-type {
+    margin-bottom: 7rem; }
