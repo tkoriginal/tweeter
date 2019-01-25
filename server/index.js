@@ -16,11 +16,11 @@ app.use(sassMiddleware({
   /* Options */
   src: path.join(__dirname, 'styles'),
   dest: path.join(__dirname, '../','public', 'styles'),
-  debug: true,
+  // debug: true, //will provide logs in terminal when true.
   outputStyle: 'nested',
   prefix:  '/styles'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
 }));
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '../','public')));
 
 MongoClient.connect( 
   MONGODB_URI,
