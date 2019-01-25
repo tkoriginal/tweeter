@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  color: #244751;
+  background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main.container{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 8rem;
+} 
+
+nav#nav-bar{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 8rem;
+  width: 100vw;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding: 0 3.2rem;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}

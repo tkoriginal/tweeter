@@ -9,11 +9,20 @@ const app = express();
 const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const MONGODB_URI = 'mongodb://localhost:27017/tweeter';
+const sassMiddleware = require('node-sass-middleware');
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(sassMiddleware({
+  /* Options */
+  src: path.join(__dirname, 'styles'),
+  dest: path.join(__dirname, '../','public', 'styles'),
+  debug: true,
+  outputStyle: 'nested',
+  prefix:  '/styles'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
+}));
 app.use(express.static('public'));
 
-MongoClient.connect(
+MongoClient.connect( 
   MONGODB_URI,
   (err, db) => {
     if (err) {
