@@ -62,9 +62,6 @@ main.container {
     font-size: 3.2rem;
     align-self: center;
     display: none; }
-  @media only screen and (min-width: 600px) {
-    #nav-bar .header {
-      display: block; } }
   #nav-bar .nav-bar__logo {
     display: flex; }
   #nav-bar .nav-bar__compose {
@@ -81,6 +78,11 @@ main.container {
       color: #fff;
       background-color: #00574a;
       outline: none; }
+  @media only screen and (min-width: 600px) {
+    #nav-bar {
+      justify-content: space-around; }
+    #nav-bar .header {
+      display: block; } }
 
 section.new-tweet {
   margin: 5rem 3.2rem 3rem 3.2rem;

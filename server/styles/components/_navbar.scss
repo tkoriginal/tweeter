@@ -22,11 +22,6 @@
     align-self: center;
     display: none;
   }
-  @media only screen and (min-width: 600px) {
-  & .header{
-      display: block;
-    }  
-  }
   & .nav-bar{
     &__logo{
       display: flex;
@@ -50,4 +45,12 @@
       }
     }
   }
+  @media only screen and (min-width: 600px) {
+    &{
+      justify-content: space-around;
+    }
+    & .header{
+        display: block;
+      }  
+    }
 }
