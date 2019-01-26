@@ -29,4 +29,4 @@ Tweeter is a simple, single-page Twitter clone.
 - Responsive design
 
 ## Screenshots
-!["Once all the tweets run out"]https://github.com/tkoriginal/tweeter/blob/master/docs/End-of-tweets.png?raw=true
+!["Once all the tweets run out"](https://github.com/tkoriginal/tweeter/blob/master/docs/End-of-tweets.png?raw=true)
