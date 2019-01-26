@@ -39,6 +39,7 @@ Focus on tweetbox when composed
 
 2 Possible Errors (no text or over 140)
 !["no text"](https://github.com/tkoriginal/tweeter/blob/master/docs/Error-1.png?raw=true)
+
 !["too much test"](https://github.com/tkoriginal/tweeter/blob/master/docs/Error-2.png?raw=true)
 
 
@@ -48,4 +49,5 @@ At the bottom of the well!
 Responsive Design
 
 !["iPhone 5"](https://github.com/tkoriginal/tweeter/blob/master/docs/Responsive-design-1.png?raw=true)
+
 !["iPad"](https://github.com/tkoriginal/tweeter/blob/master/docs/Responsive-design-2.png?raw=true)
