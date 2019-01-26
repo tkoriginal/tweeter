@@ -28,3 +28,5 @@ Tweeter is a simple, single-page Twitter clone.
 - Random users are created for this release
 - Responsive design
 
+## Screenshots
+!["Once all the tweets run out"]https://github.com/tkoriginal/tweeter/blob/master/docs/End-of-tweets.png?raw=true
