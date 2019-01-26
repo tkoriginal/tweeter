@@ -29,4 +29,23 @@ Tweeter is a simple, single-page Twitter clone.
 - Responsive design
 
 ## Screenshots
+On load (if there are tweets!)
+!["startup"](https://github.com/tkoriginal/tweeter/blob/master/docs/Start-up.png?raw=true)
+
+
+Focus on tweetbox when composed
+!["tweet-box"](https://github.com/tkoriginal/tweeter/blob/master/docs/Tweet-box.png?raw=true)
+
+
+2 Possible Errors (no text or over 140)
+!["no text"](https://github.com/tkoriginal/tweeter/blob/master/docs/Error-1.png?raw=true)
+!["too much test"](https://github.com/tkoriginal/tweeter/blob/master/docs/Error-2.png?raw=true)
+
+
+At the bottom of the well!
 !["Once all the tweets run out"](https://github.com/tkoriginal/tweeter/blob/master/docs/End-of-tweets.png?raw=true)
+
+Responsive Design
+
+!["iPhone 5"](https://github.com/tkoriginal/tweeter/blob/master/docs/Responsive-design-1.png?raw=true)
+!["iPad"](https://github.com/tkoriginal/tweeter/blob/master/docs/Responsive-design-2.png?raw=true)
